@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/TnumEletrodos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="217dp"
+        android:text="Número de electrodos"
+        android:textColor="#436827"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="248dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="68dp"
+        android:background="#436827"
+        android:text="Iniciar"
+        android:textColor="#FFFFFF"
+        />
+
+    <EditText
+        android:id="@+id/ETSeparacion"
+        android:layout_width="300dp"
+        android:layout_height="63dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:background="#FFFFFF"
+        android:textColor="#436827"
+        android:digits="0123456789."
+        android:hapticFeedbackEnabled="false"
+        android:hint="Ingrese la separación"
+        android:inputType="numberDecimal"
+        android:textColorHint="#436827"
+        android:textSize="30sp" />
+
+
+    <Spinner
+        android:id="@+id/spin"
+        android:layout_width="144dp"
+        android:layout_height="54dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="138dp"
+        android:entries="@array/country"
+        android:background="#FFFFFF"
+        android:autofillHints="Hola mundo"
+        android:outlineAmbientShadowColor="#436827"></Spinner>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="204dp"
+        android:layout_height="104dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:adjustViewBounds="true"
+        app:srcCompat="@drawable/junglefoto_jpg" />
+
+</RelativeLayout>
